@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Find User | Result Page</title>
+    </head>
+    <body>
+    <h1>Search Results:</h1>
+<!-- Start of search result. -->
+    <ul>
+        {% for item in streamer %}
+        <li>ID {{ item.id }}, Name: {{ item.name }}</li>
+        {% else %}
+        <li>No record found!</li>
+        {% endfor %}
+    </ul> 
+<!-- End of search result. -->
+    </body>
+</html>
