@@ -7,6 +7,7 @@ let   getUser       = new Router();
 getUser.get('/search/:name',async (ctx) => {
     let streamer    = await knex.select('*').from('thongtin').where('name', 'like', '%'+ctx.params.name+'%');
     ctx.body = nunjucks.render('index.html',{streamer});
+
 });
 
 module.exports = getUser;
