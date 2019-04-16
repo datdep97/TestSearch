@@ -10,9 +10,8 @@ module.exports = {
       password : '1',
       database : 'ltd',
       charset: 'utf8'
-   
-    }
+      }
  
-  }
+   }
 
 };
